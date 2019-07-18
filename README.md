@@ -49,6 +49,15 @@
 	-> LDAP.
 	-> Custom / Pluggable.
 	-> others.....
-	
+
+9. CSRF - Cross-Site Request Forgery
+	-> Spring Security protects against CSRF.
+	-> What is CSRF? - A security attack where an evil website tricks you into executing an action on a web application that 
+	you are currently logged in.
+	-> Spring Security's CSRF Protection -
+		-> CSRF protection is enabled by default in Spring Security.
+		-> Spring Security uses Synchronizer Token Pattern. Each request includes a session cookie and randomly generated token.
+		-> For request processing, Spring Security verifies token before processing.
+		-> All of this is handled by Spring Security Filters. 	
 
 
